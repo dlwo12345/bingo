@@ -20,7 +20,7 @@ const Cell = ({ tds, index }) => {
 }
 
 Cell.defaultProps = {
-    tds: [1, 2, 3, 4, 5]
+    tds: [0, 0, 0, 0, 0]
 }
 
 export default Cell;
