@@ -1,0 +1,11 @@
+.bingo-wrap {
+    display:inline-block; 
+    margin: 30px;
+}
+
+.bingo-table td{
+    border: 1px solid black;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
