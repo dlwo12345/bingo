@@ -1,12 +1,13 @@
 import React from 'react';
 import './Cell.css'
 
-const Cell = ({ tds, index }) => {
+const Cell = ({ tds, rowIndex, onSelect }) => {
     const tdList = tds.map(
         (v, i) => (
             <td
                 className="bingo-td"
                 key={i}
+                onClick={() => onSelect(rowIndex, i)}
             >
                 {v}
             </td>
@@ -20,7 +21,8 @@ const Cell = ({ tds, index }) => {
 }
 
 Cell.defaultProps = {
-    tds: [0, 0, 0, 0, 0]
+    tds: [0, 0, 0, 0, 0],
+    onSelect: () => console.warn('onSelect not defined'),
 }
 
 export default Cell;

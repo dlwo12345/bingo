@@ -2,5 +2,13 @@
     border: 1px solid black;
     width: 30px;
     text-align: center;
+}
+.bingo-hidden-checkbox{
+    display: none;
+}
+.bingo-label-checkbox{
+    display: block;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }

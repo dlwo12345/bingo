@@ -2,12 +2,14 @@ import React from 'react';
 import './BingoTable.css';
 import Cell from './Cell';
 
-const BingoTable = ({ playName, cells }) => {
+const BingoTable = ({ playName, cells, onSelect }) => {
     const cellList = cells.map(
         (v, i) => (
             <Cell
                 key={i}
+                rowIndex={i}
                 tds={v}
+                onSelect={onSelect}
             />
         )
     )
